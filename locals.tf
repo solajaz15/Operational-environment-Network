@@ -18,4 +18,6 @@ locals {
 
   vpc_id = aws_vpc.kojitechs_vpc.id
 
+  azs = data.aws_availability_zones.azs.names
+
 }

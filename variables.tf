@@ -6,6 +6,13 @@
 # 2 DB
 #
 
+variable "vpc_cidr" {
+  type        = string
+  description = "vpc_cidr"
+  default     = "10.0.0.0/16"
+
+}
+
 variable "pub_subnet_cidr" {
   type        = list(any)
   description = "pub subnet cidr"
